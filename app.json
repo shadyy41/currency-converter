@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "currency-converter",
+    "slug": "currency-converter",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "currency-converter"
+}
