@@ -204,7 +204,7 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView className="flex items-start justify-start bg-black">
+      <SafeAreaView className="flex items-start justify-start bg-black h-full px-1">
         <ScrollView className="w-full">
           <View className="w-full mt-3">
             <Text className="text-slate-300 text-3xl font-semibold">Currency Converter</Text>
@@ -262,14 +262,14 @@ export default function App() {
             </View>
           </View>
           <View className="flex-row gap-3 mb-3">
-            <View className="flex-1 border border-white rounded-lg h-12 flex justify-center">
+            <View className="flex-1 rounded-lg h-12 flex justify-center">
               <Button disabled={adding} onPress={favorite} title="Add to favorites"/>
             </View>
-            <View className="flex-1 border border-white rounded-lg h-12 flex justify-center">
+            <View className="flex-1 rounded-lg h-12 flex justify-center">
               <Button disabled={generating} onPress={generateGraph} title={generating ? "Generating" : "Get Rate Chart"}/>
             </View>
           </View>
-          <View className="mb-3 border w-full border-white rounded-lg h-12 flex justify-center">
+          <View className="mb-3 w-full rounded-lg h-12 flex justify-center">
             <Button disabled={converting} onPress={convert} title={converting ? "Converting..." : "Convert"}/>
           </View>
           {amt2===null ? <></> : <View className="w-full">
